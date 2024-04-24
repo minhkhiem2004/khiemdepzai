@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlights Tennis</title>
+    <style>
+        /* CSS cho khung video */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Tỷ lệ chiều cao / chiều rộng (9:16) */
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container" onclick="changeVideo('tA8MTiZEVis')">
+        <!-- Dán mã nhúng từ YouTube vào đây -->
+        <iframe id="video1" width="560" height="315" src="https://www.youtube.com/embed/tA8MTiZEVis" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-container" onclick="changeVideo('ejlAK62ur44')">
+        <!-- Dán mã nhúng từ YouTube vào đây -->
+        <iframe id="video2" width="560" height="315" src="https://www.youtube.com/embed/ejlAK62ur44" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-container" onclick="changeVideo('uikNgr-U69s')">
+        <!-- Dán mã nhúng từ YouTube vào đây -->
+        <iframe id="video3" width="560" height="315" src="https://www.youtube.com/embed/uikNgr-U69s" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <!-- Thêm các video khác tại đây -->
+    
+    <!-- JavaScript -->
+    <script>
+        function changeVideo(videoId) {
+            var iframe = document.getElementById('currentVideo');
+            iframe.src = "https://www.youtube.com/embed/" + videoId(tA8MTiZEVis, ejlAK62ur44, uikNgr-U69s);
+        }
+    </script>
+</body>
+</html>

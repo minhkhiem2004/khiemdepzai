@@ -1,0 +1,203 @@
+body {
+    background-color:aliceblue;
+}
+
+.language-selector {
+    position: absolute; /* Đặt vị trí tuyệt đối để dễ dàng di chuyển */
+    top: 10px; /* Căn lề từ phía trên 10px */
+    right: 10px; /* Căn lề từ phía bên phải 10px */
+    z-index: 999; /* Đảm bảo nó hiển thị trên tất cả các phần tử khác */
+}
+
+.image-container {
+    position: relative;
+    display: inline-block; /* or inline-flex, inline-grid depending on your layout */
+}
+  
+.text-overlay {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.container {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử con */
+    justify-content: center; /* Căn lề các phần tử con theo chiều ngang */
+}
+  
+.navigation {
+    display: flex; /* Sử dụng flexbox cho các phần tử trong thanh điều hướng */
+}
+  
+.nav-item {
+    padding: 10px 20px; /* Khoảng cách giữa các mục */
+    border: 1px solid #7c1313; /* Đường viền để phân biệt các mục */
+    margin: 3 6px; /* Khoảng cách giữa các mục */
+    background-color: aqua;
+}
+
+.about-us {
+    text-align: center;
+}
+
+
+/* tournaments */
+body {   
+  font-family: Arial, sans-serif;
+  margin: 10;
+  padding: 10;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  width: 90%;
+  border-collapse:separate;
+  position:fixed;
+  left: 50%; /* Đặt bảng ở giữa */
+  transform: translateX(-50%);
+  border-collapse: collapse;
+  margin-top: 80px; /* Để tạo khoảng trống giữa nội dung và bảng */
+}
+
+th, td {
+  border: 1px solid #668d77;
+  padding: 8px;
+  text-align:center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+  
+select {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none; /* Ẩn giao diện mặc định của dropdown */
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: right 8px top 50%;
+}
+  
+select:hover {
+    border-color: #999;
+}
+  
+select:focus {
+    border-color: #333;
+    outline: none;
+}
+  
+/* Tạo hiệu ứng hover cho label */
+label:hover {
+    color: #555;
+}
+
+
+/* rankings */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.table-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+th {
+  background-color: #f8f9fa;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Hidden class */
+.hidden {
+  display: none;
+}
+
+/* Player details styling */
+#player-details {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: none; /* Hide player details by default */
+}
+
+#player-details.show {
+  display: block; /* Show player details when .show class is added */
+}
+
+#player-details h2 {
+  margin-bottom: 10px;
+}
+
+#player-details p {
+  line-height: 1.6;
+}
+
+
+
+
